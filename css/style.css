@@ -1,0 +1,391 @@
+@font-face {
+  font-family: 'Geometria';
+  src: url('../fonts/Geometria-Bold.woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Geometria';
+  src: url('../fonts/Geometria-Bold.woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Geometria';
+  src: url('../fonts/Geometria-BoldItalic.woff2');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Geometria';
+  src: url('../fonts/Geometria-ExtraBold.woff2');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Geometria';
+  src: url('../fonts/Geometria-ExtraBoldItalic.woff2');
+  font-weight: 800;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Geometria';
+  src: url('../fonts/Geometria-ExtraLight.woff2');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Geometria';
+  src: url('../fonts/Geometria-ExtraLightItalic.woff2');
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Geometria';
+  src: url('../fonts/Geometria-Heavy.woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Geometria';
+  src: url('../fonts/Geometria-HeavyItalic.woff2');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Geometria';
+  src: url('../fonts/Geometria-Italic.woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Geometria';
+  src: url('../fonts/Geometria-Light.woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Geometria';
+  src: url('../fonts/Geometria-LightItalic.woff2');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Geometria';
+  src: url('../fonts/Geometria-Medium.woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Geometria';
+  src: url('../fonts/Geometria-MediumItalic.woff2');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Geometria';
+  src: url('../fonts/Geometria-Regular.woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Geometria';
+  src: url('../fonts/Geometria-Thin.woff2');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Geometria';
+  src: url('../fonts/Geometria-ThinItalic.woff2');
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Geometria', sans-serif;
+  color: #111111;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style-type: none;
+}
+
+button {
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  font-family: inherit;
+}
+
+input {
+  border: none;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.container {
+  max-width: 1240px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+/* header */
+.header {
+  font-size: 14px;
+  padding-top: 35px;
+}
+
+.header__top {
+  display: flex;
+  align-items: center;
+  margin-bottom: 23px;
+}
+
+.header__top-logo-link {
+  margin-right: 98px;
+}
+
+.header__top-img {
+}
+.header__top-catalog {
+  text-transform: uppercase;
+  padding-left: 27px;
+  position: relative;
+  margin-right: 46px;
+}
+
+.header__top-catalog::before {
+  content: '';
+  position: absolute;
+  background-image: url('../images/catalog-decor.svg');
+  width: 20px;
+  height: 20px;
+  left: 0;
+}
+
+.header__top-input-wrapper {
+  position: relative;
+  max-width: 314px;
+  width: 100%;
+  margin-right: 56px;
+}
+
+.header__top-input-wrapper::before {
+  content: '';
+  position: absolute;
+  background-image: url('../images/loupe.svg');
+  width: 13px;
+  height: 13px;
+  left: 17px;
+  top: 8px;
+}
+
+.header__top-input {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: inset 0px 0px 3px 0px rgba(50, 87, 164, 0.25);
+  padding: 9px 17px 8px 40px;
+}
+
+.header__top-input::placeholder {
+  color: #111111;
+}
+
+.header__top-order-call {
+  color: #3257a4;
+  filter: drop-shadow(0px 4px 4px 0px rgba(0, 0, 0, 0.25));
+  display: inline-block;
+  padding-left: 14px;
+  border-bottom: 1px solid #3257a4;
+  position: relative;
+  margin-right: 33px;
+}
+
+.header__top-order-call::before {
+  content: '';
+  position: absolute;
+  background-image: url('../images/order-call-decor.svg');
+  width: 10px;
+  height: 10px;
+  left: 0;
+}
+.header__top-phone {
+  margin-right: 33px;
+}
+.header__top-list {
+  display: flex;
+  gap: 5px;
+}
+.header__top-list-item {
+}
+.header__top-list-a {
+}
+.header__top-list-img {
+}
+
+.header__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+.nav {
+}
+.nav__list {
+  display: flex;
+  gap: 30px;
+}
+.nav__item {
+}
+.nav__item-a {
+}
+.header__bottom-list {
+  display: flex;
+  align-items: end;
+  gap: 30px;
+}
+.header__bottom-item {
+}
+.header__bottom-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header__bottom-img {
+}
+
+/* main */
+.main {
+  flex-grow: 1;
+}
+
+/* footer */
+
+.footer {
+  background-color: #232323;
+  color: #fff;
+  font-size: 14px;
+  padding: 66px 0 37px 0;
+}
+.container {
+}
+.footer__inner {
+  display: flex;
+  justify-content: space-between;
+}
+.footer__one {
+}
+.footer__one-img {
+  max-width: 139px;
+  height: 30px;
+  margin-bottom: 28px;
+}
+.footer__one-list {
+  display: flex;
+  gap: 6px;
+}
+.footer__one-item {
+}
+.footer__one-item-a {
+}
+.footer__one-item-img {
+  width: 21px;
+  height: 21px;
+}
+.footer__two-list {
+}
+.footer__two-item {
+  margin-bottom: 20px;
+}
+.footer__two-a {
+}
+.footer__three-list {
+}
+.footer__three-item {
+  margin-bottom: 20px;
+}
+.footer__three-a {
+}
+.footer__right {
+  display: flex;
+  gap: 45px;
+}
+.footer__four {
+  max-width: 270px;
+}
+.footer__four-a {
+  display: block;
+  margin-bottom: 33px;
+}
+.footer__four-p {
+}
+.footer__five {
+  max-width: 285px;
+  margin-top: 5px;
+}
+.footer__five-a {
+  display: block;
+  margin-bottom: 10px;
+}
+.footer__five-p {
+}
+.footer__wrapper {
+  display: flex;
+  justify-content: end;
+  gap: 12px;
+}
+.footer__wrapper-img {
+}
