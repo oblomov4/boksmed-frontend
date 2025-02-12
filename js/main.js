@@ -34,34 +34,35 @@ const swiperTwo = new Swiper('.swiperTwo', {
 
 //Медецинское оборудование
 const equipmentBoxs = document.querySelectorAll('.equipment__box');
-
-equipmentBoxs.forEach((elem, index) => {
-  if (index >= 5) {
-    elem.classList.add('hidden');
-  }
-});
-
 const showEquipment = document.getElementById('show-equipment');
 
-showEquipment.onclick = (e) => {
-  if (showEquipment.textContent.trim() == 'скрыть') {
-    // alert('скрыть');
-    equipmentBoxs.forEach((elem, index) => {
-      if (index >= 5) {
-        elem.classList.remove('show');
-        elem.classList.add('hidden');
-      }
-    });
-    showEquipment.textContent = 'показать все медицинское оборудование';
-    showEquipment.classList.remove('rotate-0');
-  } else {
-    equipmentBoxs.forEach((elem) => {
-      if (elem.classList.contains('hidden')) {
-        elem.classList.remove('hidden');
-        elem.classList.add('show');
-      }
-    });
-    showEquipment.textContent = 'скрыть';
-    showEquipment.classList.add('rotate-0');
-  }
-};
+if (showEquipment) {
+  equipmentBoxs.forEach((elem, index) => {
+    if (index >= 5) {
+      elem.classList.add('hidden');
+    }
+  });
+
+  showEquipment.onclick = (e) => {
+    if (showEquipment.textContent.trim() == 'скрыть') {
+      // alert('скрыть');
+      equipmentBoxs.forEach((elem, index) => {
+        if (index >= 5) {
+          elem.classList.remove('show');
+          elem.classList.add('hidden');
+        }
+      });
+      showEquipment.textContent = 'показать все медицинское оборудование';
+      showEquipment.classList.remove('rotate-0');
+    } else {
+      equipmentBoxs.forEach((elem) => {
+        if (elem.classList.contains('hidden')) {
+          elem.classList.remove('hidden');
+          elem.classList.add('show');
+        }
+      });
+      showEquipment.textContent = 'скрыть';
+      showEquipment.classList.add('rotate-0');
+    }
+  };
+}

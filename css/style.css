@@ -193,12 +193,12 @@ input {
 
 .hidden {
   display: none;
-  animation-name: test;
+  animation-name: hidden-elem;
   animation-duration: 0.3s;
 }
 
 .show {
-  animation-name: testing;
+  animation-name: show-elem;
   animation-duration: 0.3s;
 }
 
@@ -770,7 +770,35 @@ input {
   top: 0;
 }
 
-.brand__box-img {
+/* bread-crumps */
+.bread-crumbs {
+}
+.container {
+}
+.bread-crumbs__inner {
+}
+.bread-crumbs__inner-a {
+  position: relative;
+  padding-right: 16px;
+  margin-right: 7px;
+  font-size: 14px;
+}
+
+.bread-crumbs__inner-a::after {
+  content: '';
+  position: absolute;
+  background-image: url('../images/bread-crumbs-decor.svg');
+  width: 11px;
+  height: 11px;
+  right: 0;
+  top: 4px;
+}
+.bread-crumbs__inner-a--active {
+  color: #3257a4;
+}
+
+.bread-crumbs__inner-a--active::after {
+  display: none;
 }
 
 /* footer */
@@ -862,7 +890,7 @@ input {
 .footer__wrapper-img {
 }
 
-@keyframes test {
+@keyframes hidden-elem {
   from {
     display: block;
     opacity: 1;
@@ -874,7 +902,7 @@ input {
   }
 }
 
-@keyframes testing {
+@keyframes show-elem {
   from {
     transform: translateX(-100%);
     opacity: 0;
