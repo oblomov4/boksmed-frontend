@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
@@ -103,13 +104,467 @@
         </div>
       </header>
 
-      <main class="main"></main>
+      <main class="main">
+        <section class="promo">
+          <div class="container">
+            <!-- Slider main container -->
+            <div class="swiper swiperOne">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                  <div class="promo__box">
+                    <div class="promo__box-content">
+                      <img class="promo__box-img" src="images/promo-logo1.png" alt="logo" />
+                      <h2 class="promo__box-title">
+                        Ручные и автоматические дефибрилляторы «Primedic»
+                      </h2>
+                      <p class="promo__box-subtitle">
+                        что то нужно написать, может быть качество и выгодные цены..
+                      </p>
+
+                      <div class="promo__box-wrapper">
+                        <a class="promo__box-link" href="#">перейти в каталог</a>
+                        <div class="btn-wrapper">
+                          <img class="prev" src="images/prev.svg" alt="prev" />
+                          <img class="next" src="images/next.svg" alt="next" />
+                        </div>
+                      </div>
+                    </div>
+                    <img
+                      class="promo__box-image"
+                      src="images/promo-image1.png"
+                      alt="promo-image1" />
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="promo__box">
+                    <div class="promo__box-content">
+                      <img class="promo__box-img" src="images/promo-logo2.png" alt="logo2" />
+                      <h2 class="promo__box-title">Хирургические сшивающие аппараты «Panther»</h2>
+                      <p class="promo__box-subtitle">
+                        Cтоят в одном ряду с аппаратами известных мировых производителей
+                      </p>
+
+                      <div class="promo__box-wrapper">
+                        <a class="promo__box-link" href="#">Подробнее</a>
+                        <div class="btn-wrapper">
+                          <img class="prev" src="images/prev.svg" alt="prev" />
+                          <img class="next" src="images/next.svg" alt="next" />
+                        </div>
+                      </div>
+                    </div>
+                    <img
+                      class="promo__box-image"
+                      src="images/promo-image2.png"
+                      alt="promo-image1" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="equipment">
+          <div class="container">
+            <h2 class="title">Медицинское оборудование</h2>
+            <div class="equipment__inner">
+              <div class="equipment__box equipment__box--one">
+                <h3 class="equipment__box-title">ДЕФИБРИЛЯТОРЫ</h3>
+                <a href="#" class="equipment__box-a">перейти в каталог</a>
+                <img
+                  class="equipment__box-img equipment__box-img--one"
+                  src="images/equipment1.png"
+                  alt="оборудование" />
+              </div>
+
+              <div class="equipment__box">
+                <h3 class="equipment__box-title">РЕАНИМАЦИЯ</h3>
+                <a href="#" class="equipment__box-a">перейти в каталог</a>
+                <img class="equipment__box-img" src="images/equipment2.png" alt="оборудование" />
+              </div>
+
+              <div class="equipment__box">
+                <h3 class="equipment__box-title">СШИВАЮЩИЕ ИНСТРУМЕНТЫ</h3>
+                <a href="#" class="equipment__box-a">перейти в каталог</a>
+                <img class="equipment__box-img" src="images/equipment3.png" alt="оборудование" />
+              </div>
+
+              <div class="equipment__box">
+                <h3 class="equipment__box-title">МЕДИЦИНСКИЙ ИНСТРУМЕНТ</h3>
+                <a href="#" class="equipment__box-a">перейти в каталог</a>
+                <img class="equipment__box-img" src="images/equipment4.png" alt="оборудование" />
+              </div>
+
+              <div class="equipment__box">
+                <h3 class="equipment__box-title">КИСЛОРОДНОЕ ОБОРУДОВАНИЕ</h3>
+                <a href="#" class="equipment__box-a">перейти в каталог</a>
+                <img class="equipment__box-img" src="images/equipment5.png" alt="оборудование" />
+              </div>
+
+              <div class="equipment__box">
+                <h3 class="equipment__box-title">Импланты</h3>
+                <a href="#" class="equipment__box-a">перейти в каталог</a>
+                <img class="equipment__box-img" src="images/equipment6.png" alt="оборудование" />
+              </div>
+            </div>
+            <button id="show-equipment" class="equipment__btn">
+              показать все медицинское оборудование
+            </button>
+          </div>
+        </section>
+
+        <section class="new">
+          <div class="container">
+            <h2 class="title new__title">Новинки</h2>
+            <!-- Slider main container -->
+            <div class="new__swiper">
+              <div class="swiper swiperTwo">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide swiper-slide1">
+                    <div class="new__box">
+                      <img class="new__box-img" src="images/new1.png" alt="new1" />
+                      <div class="new__box-reviews-wrapper">
+                        <img src="images/star-gold.svg" alt="" />
+                        <img src="images/star-gold.svg" alt="" />
+                        <img src="images/star-gold.svg" alt="" />
+                        <img src="images/star-gray.svg" alt="" />
+                        <img src="images/star-gray.svg" alt="" />
+                      </div>
+                      <p class="nex__box-art">арт. <span>97530</span></p>
+                      <h3 class="new__box-title">
+                        АВТОМАТИЧЕСКИЙ ДЕФИБРИЛЛЯТОР PRIMEDIC HEARTSAVE PAD
+                      </h3>
+                      <p class="new__box-price">136 000<span>₽</span></p>
+                      <div class="new__box-wrapper">
+                        <button class="new__box-cart">в корзину</button>
+                        <button class="new__box-buy">купить</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide swiper-slide">
+                    <div class="new__box">
+                      <img class="new__box-img" src="images/new2.png" alt="new1" />
+                      <div class="new__box-reviews-wrapper">
+                        <img src="images/star-gold.svg" alt="" />
+                        <img src="images/star-gold.svg" alt="" />
+                        <img src="images/star-gold.svg" alt="" />
+                        <img src="images/star-gray.svg" alt="" />
+                        <img src="images/star-gray.svg" alt="" />
+                      </div>
+                      <p class="nex__box-art">арт. <span>97530</span></p>
+                      <h3 class="new__box-title">ДЕФИБРИЛЛЯТОР-МОНИТОР ДКИ-Н-11</h3>
+                      <p class="new__box-price">150 000<span>₽</span></p>
+                      <div class="new__box-wrapper">
+                        <button class="new__box-cart">в корзину</button>
+                        <button class="new__box-buy">купить</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide swiper-slide">
+                    <div class="new__box">
+                      <img class="new__box-img" src="images/new3.png" alt="new1" />
+                      <div class="new__box-reviews-wrapper">
+                        <img src="images/star-gold.svg" alt="" />
+                        <img src="images/star-gold.svg" alt="" />
+                        <img src="images/star-gold.svg" alt="" />
+                        <img src="images/star-gray.svg" alt="" />
+                        <img src="images/star-gray.svg" alt="" />
+                      </div>
+                      <p class="nex__box-art">арт. <span>97530</span></p>
+                      <h3 class="new__box-title">
+                        АВТОМАТИЧЕСКИЙ ДЕФИБРИЛЛЯТОР PRIMEDIC HEARTSAVE AS
+                      </h3>
+                      <p class="new__box-price">147 000<span>₽</span></p>
+                      <div class="new__box-wrapper">
+                        <button class="new__box-cart">в корзину</button>
+                        <button class="new__box-buy">купить</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="new__box">
+                      <img class="new__box-img" src="images/new4.png" alt="new1" />
+                      <div class="new__box-reviews-wrapper">
+                        <img src="images/star-gold.svg" alt="" />
+                        <img src="images/star-gold.svg" alt="" />
+                        <img src="images/star-gold.svg" alt="" />
+                        <img src="images/star-gray.svg" alt="" />
+                        <img src="images/star-gray.svg" alt="" />
+                      </div>
+                      <p class="nex__box-art">арт. <span>97530</span></p>
+                      <h3 class="new__box-title">
+                        Пневматический аппарат ИВЛ и ингаляции А-ИВЛ/ВВЛП-3/30
+                      </h3>
+                      <p class="new__box-price">190 000<span>₽</span></p>
+                      <div class="new__box-wrapper">
+                        <button class="new__box-cart">в корзину</button>
+                        <button class="new__box-buy">купить</button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="new__box">
+                      <img class="new__box-img" src="images/new1.png" alt="new1" />
+                      <div class="new__box-reviews-wrapper">
+                        <img src="images/star-gold.svg" alt="" />
+                        <img src="images/star-gold.svg" alt="" />
+                        <img src="images/star-gold.svg" alt="" />
+                        <img src="images/star-gray.svg" alt="" />
+                        <img src="images/star-gray.svg" alt="" />
+                      </div>
+                      <p class="nex__box-art">арт. <span>97530</span></p>
+                      <h3 class="new__box-title">
+                        АВТОМАТИЧЕСКИЙ ДЕФИБРИЛЛЯТОР PRIMEDIC HEARTSAVE PAD
+                      </h3>
+                      <p class="new__box-price">136 000<span>₽</span></p>
+                      <div class="new__box-wrapper">
+                        <button class="new__box-cart">в корзину</button>
+                        <button class="new__box-buy">купить</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="new__box">
+                      <img class="new__box-img" src="images/new2.png" alt="new1" />
+                      <div class="new__box-reviews-wrapper">
+                        <img src="images/star-gold.svg" alt="" />
+                        <img src="images/star-gold.svg" alt="" />
+                        <img src="images/star-gold.svg" alt="" />
+                        <img src="images/star-gray.svg" alt="" />
+                        <img src="images/star-gray.svg" alt="" />
+                      </div>
+                      <p class="nex__box-art">арт. <span>97530</span></p>
+                      <h3 class="new__box-title">ДЕФИБРИЛЛЯТОР-МОНИТОР ДКИ-Н-11</h3>
+                      <p class="new__box-price">150 000<span>₽</span></p>
+                      <div class="new__box-wrapper">
+                        <button class="new__box-cart">в корзину</button>
+                        <button class="new__box-buy">купить</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="new__box">
+                      <img class="new__box-img" src="images/new3.png" alt="new1" />
+                      <div class="new__box-reviews-wrapper">
+                        <img src="images/star-gold.svg" alt="" />
+                        <img src="images/star-gold.svg" alt="" />
+                        <img src="images/star-gold.svg" alt="" />
+                        <img src="images/star-gray.svg" alt="" />
+                        <img src="images/star-gray.svg" alt="" />
+                      </div>
+                      <p class="nex__box-art">арт. <span>97530</span></p>
+                      <h3 class="new__box-title">
+                        АВТОМАТИЧЕСКИЙ ДЕФИБРИЛЛЯТОР PRIMEDIC HEARTSAVE AS
+                      </h3>
+                      <p class="new__box-price">147 000<span>₽</span></p>
+                      <div class="new__box-wrapper">
+                        <button class="new__box-cart">в корзину</button>
+                        <button class="new__box-buy">купить</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="new__box">
+                      <img class="new__box-img" src="images/new4.png" alt="new1" />
+                      <div class="new__box-reviews-wrapper">
+                        <img src="images/star-gold.svg" alt="" />
+                        <img src="images/star-gold.svg" alt="" />
+                        <img src="images/star-gold.svg" alt="" />
+                        <img src="images/star-gray.svg" alt="" />
+                        <img src="images/star-gray.svg" alt="" />
+                      </div>
+                      <p class="nex__box-art">арт. <span>97530</span></p>
+                      <h3 class="new__box-title">
+                        Пневматический аппарат ИВЛ и ингаляции А-ИВЛ/ВВЛП-3/30
+                      </h3>
+                      <p class="new__box-price">190 000<span>₽</span></p>
+                      <div class="new__box-wrapper">
+                        <button class="new__box-cart">в корзину</button>
+                        <button class="new__box-buy">купить</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- If we need navigation buttons -->
+                <!-- <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div> -->
+                <!-- If we need scrollbar -->
+              </div>
+              <img class="new__prev" src="images/prev.svg" alt="prev" />
+              <img class="new__next" src="images/next.svg" alt="next" />
+            </div>
+          </div>
+        </section>
+
+        <section class="brand">
+          <div class="container">
+            <div class="brand__wrapper">
+              <h2 class="title">Бренды и заводы производители</h2>
+
+              <div class="brand__inner">
+                <div
+                  class="brand__box brand__box-align-end brand__box-border-bottom brand__box-border-right-bottom">
+                  <div class="brand__box-wrapper">
+                    <a href="#">
+                      <img class="brand__box-img" src="images/brand1.png" alt="" />
+                    </a>
+                  </div>
+                </div>
+                <div
+                  class="brand__box brand__box-align-end brand__box-border-bottom brand__box-border-right-bottom">
+                  <div class="brand__box-wrapper">
+                    <a href="#">
+                      <img class="brand__box-img" src="images/brand2.png" alt="" />
+                    </a>
+                  </div>
+                </div>
+                <div
+                  class="brand__box brand__box-align-end brand__box-border-bottom brand__box-border-right-bottom">
+                  <div class="brand__box-wrapper">
+                    <a href="#">
+                      <img class="brand__box-img" src="images/brand3.png" alt="" />
+                    </a>
+                  </div>
+                </div>
+                <div
+                  class="brand__box brand__box-align-end brand__box-border-bottom brand__box-border-right-bottom">
+                  <div class="brand__box-wrapper">
+                    <a href="#">
+                      <img class="brand__box-img" src="images/brand4.png" alt="" />
+                    </a>
+                  </div>
+                </div>
+                <div class="brand__box brand__box-align-end brand__box-border-bottom">
+                  <div class="brand__box-wrapper">
+                    <a href="#">
+                      <img class="brand__box-img" src="images/brand5.png" alt="" />
+                    </a>
+                  </div>
+                </div>
+                <div class="brand__box brand__box-align-start brand__box-border-right-top">
+                  <div class="brand__box-wrapper">
+                    <a href="#">
+                      <img class="brand__box-img" src="images/brand6.png" alt="" />
+                    </a>
+                  </div>
+                </div>
+                <div class="brand__box brand__box-align-start brand__box-border-right-top">
+                  <div class="brand__box-wrapper">
+                    <a href="#">
+                      <img class="brand__box-img" src="images/brand7.png" alt="" />
+                    </a>
+                  </div>
+                </div>
+                <div class="brand__box brand__box-align-start brand__box-border-right-top">
+                  <div class="brand__box-wrapper">
+                    <a href="#">
+                      <img class="brand__box-img" src="images/brand8.png" alt="" />
+                    </a>
+                  </div>
+                </div>
+                <div class="brand__box brand__box-align-start brand__box-border-right-top">
+                  <div class="brand__box-wrapper">
+                    <a href="#">
+                      <img class="brand__box-img" src="images/brand9.png" alt="" />
+                    </a>
+                  </div>
+                </div>
+                <div class="brand__box brand__box-align-start">
+                  <div class="brand__box-wrapper">
+                    <a href="#">
+                      <img class="brand__box-img" src="images/brand10.png" alt="" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="news">
+          <div class="container">
+            <h2 class="title">Последние новости</h2>
+            <div class="news__inner">
+              <div class="news__box">
+                <img class="news__box-img" src="images/news1.png" alt="news" />
+                <div class="news__box-header">
+                  <p class="news__box-date">14.04.2022</p>
+                  <div class="new__box-header-wrapper">
+                    <img class="news__box-header-img" src="images/star-gold.svg" alt="" />
+                    <img class="news__box-header-img" src="images/star-gold.svg" alt="" />
+                    <img class="news__box-header-img" src="images/star-gold.svg" alt="" />
+                    <img class="news__box-header-img" src="images/star-gray.svg" alt="" />
+                    <img class="news__box-header-img" src="images/star-gray.svg" alt="" />
+                  </div>
+                </div>
+                <h3 class="news__box-title">
+                  Власти поменяли лимит финансирования больниц для закупки лекарств
+                </h3>
+                <div class="news__box-content">
+                  <a class="news__box-link" href="#">читать дальше</a>
+                  <p class="news__box-author">Автор: <span>Александра К.Р</span></p>
+                </div>
+              </div>
+
+              <div class="news__box">
+                <img class="news__box-img" src="images/news2.png" alt="news" />
+                <div class="news__box-header">
+                  <p class="news__box-date">17.03.2022</p>
+                  <div class="new__box-header-wrapper">
+                    <img class="news__box-header-img" src="images/star-gold.svg" alt="" />
+                    <img class="news__box-header-img" src="images/star-gold.svg" alt="" />
+                    <img class="news__box-header-img" src="images/star-gold.svg" alt="" />
+                    <img class="news__box-header-img" src="images/star-gray.svg" alt="" />
+                    <img class="news__box-header-img" src="images/star-gray.svg" alt="" />
+                  </div>
+                </div>
+                <h3 class="news__box-title">
+                  УЧЕНЫЕ ВЫРАСТИЛИ КЛЕТКИ СО ВЖИВЛЕННОЙ В НИХ ЭЛЕКТРОНИКОЙ
+                </h3>
+                <div class="news__box-content">
+                  <a class="news__box-link" href="#">читать дальше</a>
+                  <p class="news__box-author">Автор: <span>Константин К.Р</span></p>
+                </div>
+              </div>
+
+              <div class="news__box">
+                <img class="news__box-img" src="images/news3.png" alt="news" />
+                <div class="news__box-header">
+                  <p class="news__box-date">15.05.2020</p>
+                  <div class="new__box-header-wrapper">
+                    <img class="news__box-header-img" src="images/star-gold.svg" alt="" />
+                    <img class="news__box-header-img" src="images/star-gold.svg" alt="" />
+                    <img class="news__box-header-img" src="images/star-gold.svg" alt="" />
+                    <img class="news__box-header-img" src="images/star-gray.svg" alt="" />
+                    <img class="news__box-header-img" src="images/star-gray.svg" alt="" />
+                  </div>
+                </div>
+                <h3 class="news__box-title">
+                  Мантуров сообщил о проверке аппаратов ИВЛ на уральском заводе
+                </h3>
+                <div class="news__box-content">
+                  <a class="news__box-link" href="#">читать дальше</a>
+                  <p class="news__box-author">Автор: <span>Павел С.А</span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
 
       <footer class="footer">
         <div class="container">
           <div class="footer__inner">
             <div class="footer__one">
-              <img class="footer__one-img" src="images/logo.svg" alt="logo" />
+              <a href="index.html">
+                <img class="footer__one-img" src="images/logo.svg" alt="logo" />
+              </a>
 
               <ul class="footer__one-list">
                 <li class="footer__one-item">
@@ -186,5 +641,8 @@
         </div>
       </footer>
     </div>
+
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
