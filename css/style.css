@@ -885,6 +885,27 @@ input {
   font-size: 14px;
 }
 
+/* 404 */
+
+.not-found {
+}
+.container {
+}
+.not-found-title {
+  text-align: center;
+  margin-top: 175px;
+  font-size: 70px;
+  font-weight: 500;
+  color: #c41c1b;
+  margin-bottom: 25px;
+}
+.not-found-subtitle {
+  color: #3257a4;
+  font-weight: 500;
+  font-size: 24px;
+  text-align: center;
+}
+
 /* footer */
 
 .footer {
