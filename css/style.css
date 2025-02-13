@@ -906,6 +906,22 @@ input {
   text-align: center;
 }
 
+/* order-success */
+
+.order-success {
+  margin-top: 220px;
+  margin-bottom: 215px;
+}
+.container {
+}
+.order-success-message {
+  font-size: 24px;
+  color: #3257a4;
+  max-width: 413px;
+  margin: 0 auto;
+  text-align: center;
+}
+
 /* footer */
 
 .footer {
