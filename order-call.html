@@ -25,7 +25,7 @@
                 placeholder="Поиск медицинского оборудования" />
             </div>
 
-            <a class="header__top-order-call" href="#">Заказать обратный звонок</a>
+            <a class="header__top-order-call" href="order-call.html">Заказать обратный звонок</a>
 
             <a class="header__top-phone" href="tel:+73412650877">8 (3412) 65-08-77</a>
 
@@ -104,7 +104,51 @@
         </div>
       </header>
 
-      <main class="main"></main>
+      <main class="main">
+        <section class="bread-crumbs">
+          <div class="container">
+            <div class="bread-crumbs__inner">
+              <a class="bread-crumbs__inner-a" href="index.html">Главная</a>
+              <a class="bread-crumbs__inner-a bread-crumbs__inner-a--active" href="order-call.html"
+                >Обратный звонок</a
+              >
+            </div>
+          </div>
+        </section>
+
+        <section class="order-call">
+          <div class="container">
+            <form class="order-call__form">
+              <div class="order-call__form-header">
+                <div class="order-call__form-text">
+                  <h3 class="order-call__form-title">Заказать обратный звонок</h3>
+                  <p class="order-call__form-subtitle">
+                    Оставьте свои контакты - наш специалист свяжется с Вами в рабочее время.
+                  </p>
+                </div>
+                <img class="order-call__form-img" src="images/order-call.png" alt="" />
+              </div>
+
+              <div class="order-call__form-wrapper">
+                <div class="order-call__form-wrapper-input">
+                  <input placeholder="Как вас зовут?" class="order-call__form-input" type="text" />
+                  <input
+                    placeholder="+ 7 (___)-___-__-__"
+                    class="order-call__form-input"
+                    type="text" />
+                </div>
+
+                <textarea placeholder="Сообщение" class="order-call__form-textarea"></textarea>
+
+                <button class="order-call__form-btn">отправить</button>
+                <p class="order-call__form-politic">
+                  Нажимая на кнопку «Отправить», я соглашаюсь с условиями.
+                </p>
+              </div>
+            </form>
+          </div>
+        </section>
+      </main>
 
       <footer class="footer">
         <div class="container">
@@ -165,7 +209,7 @@
 
             <div class="footer__right">
               <div class="footer__four">
-                <a class="footer__four-a" href="#">Заказать обратный звонок</a>
+                <a class="footer__four-a" href="order-call.html">Заказать обратный звонок</a>
                 <p class="footer__four-p">
                   Россия, Удмуртская Республика 426011, г. Ижевск, ул. Пушкинская 290 тел. 8 (3412)
                   65-08-77
