@@ -32,7 +32,7 @@ const swiperTwo = new Swiper('.swiperTwo', {
   },
 });
 
-//Медецинское оборудование
+//Медецинское оборудование index
 const equipmentBoxs = document.querySelectorAll('.equipment__box');
 const showEquipment = document.getElementById('show-equipment');
 
@@ -65,4 +65,68 @@ if (showEquipment) {
       showEquipment.classList.add('rotate-0');
     }
   };
+}
+
+// about
+const aboutBoxs = document.querySelectorAll('.about__box');
+const aboutBtn = document.getElementById('about');
+const modalWrapper = document.querySelectorAll('.about__modal-wrapper');
+
+if (aboutBtn) {
+  aboutBoxs.forEach((elem, index) => {
+    if (index >= 6) {
+      elem.classList.add('hidden');
+    }
+  });
+
+  aboutBtn.onclick = (e) => {
+    if (aboutBtn.textContent.trim() == 'скрыть') {
+      // alert('скрыть');
+      aboutBoxs.forEach((elem, index) => {
+        if (index >= 6) {
+          elem.classList.remove('show');
+          elem.classList.add('hidden');
+        }
+      });
+      aboutBtn.textContent = 'показать еще';
+      aboutBtn.classList.remove('rotate-0');
+    } else {
+      aboutBoxs.forEach((elem) => {
+        if (elem.classList.contains('hidden')) {
+          elem.classList.remove('hidden');
+          elem.classList.add('show');
+        }
+      });
+      aboutBtn.textContent = 'скрыть';
+      aboutBtn.classList.add('rotate-0');
+    }
+  };
+
+  aboutBoxs.forEach((elem, index) => {
+    elem.onclick = (e) => {
+      const aboutBox = elem;
+      aboutBox.classList.add('about__box-none-hover');
+
+      const find = modalWrapper[index];
+      find.classList.add('active');
+
+      document.body.style.overflowY = 'hidden';
+
+      const pelena = document.createElement('div');
+      pelena.classList.add('pelena');
+      document.body.append(pelena);
+
+      const modalExit = find.querySelector('.about__modal-btn');
+
+      modalExit.onclick = (e) => {
+        aboutBox.classList.remove('about__box-none-hover');
+
+        find.classList.remove('active');
+
+        document.body.style.overflowY = '';
+
+        pelena.remove();
+      };
+    };
+  });
 }

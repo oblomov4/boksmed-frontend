@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="container">
+          <div class="header__top">
+            <a class="header__top-logo-link" href="index.html">
+              <img src="images/logo.svg" alt="" class="header__top-img" />
+            </a>
+            <button class="header__top-catalog">Каталог</button>
+
+            <div class="header__top-input-wrapper">
+              <input
+                class="header__top-input"
+                type="text"
+                placeholder="Поиск медицинского оборудования" />
+            </div>
+
+            <a class="header__top-order-call" href="order-call.html">Заказать обратный звонок</a>
+
+            <a class="header__top-phone" href="tel:+73412650877">8 (3412) 65-08-77</a>
+
+            <ul class="header__top-list">
+              <li class="header__top-list-item">
+                <a class="header__top-list-a" href="#"
+                  ><img class="header__top-list-img" src="images/viber.svg" alt="viber"
+                /></a>
+              </li>
+              <li class="header__top-list-item">
+                <a class="header__top-list-a" href="#"
+                  ><img class="header__top-list-img" src="images/telegram.svg" alt="telegram"
+                /></a>
+              </li>
+              <li class="header__top-list-item">
+                <a class="header__top-list-a" href="#"
+                  ><img class="header__top-list-img" src="images/whatsapp.svg" alt="whatsapp"
+                /></a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="header__bottom">
+            <nav class="nav">
+              <ul class="nav__list">
+                <li class="nav__item">
+                  <a href="#" class="nav__item-a">О компании</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#" class="nav__item-a">Производители</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#" class="nav__item-a">Доставка</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#" class="nav__item-a">Оплата</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#" class="nav__item-a">Новости</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#" class="nav__item-a">Реквизиты</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#" class="nav__item-a">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+
+            <ul class="header__bottom-list">
+              <li class="header__bottom-item">
+                <a href="#" class="header__bottom-link">
+                  <img class="header__bottom-img" src="images/polylines.svg" alt="polylines" />
+                  Сравнения
+                </a>
+              </li>
+
+              <li class="header__bottom-item">
+                <a href="#" class="header__bottom-link">
+                  <img
+                    class="header__bottom-img"
+                    src="images/shopping-cart.svg"
+                    alt="shopping-cart" />
+                  Корзина
+                </a>
+              </li>
+
+              <li class="header__bottom-item">
+                <a href="#" class="header__bottom-link">
+                  <img class="header__bottom-img" src="images/doctor.svg" alt="doctor" />
+                  Личный кабинет
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </header>
+
+      <main class="main">
+        <section class="bread-crumbs">
+          <div class="container">
+            <div class="bread-crumbs__inner">
+              <a class="bread-crumbs__inner-a" href="index.html">Главная</a>
+              <a class="bread-crumbs__inner-a bread-crumbs__inner-a--active" href="order-call.html"
+                >Доставка</a
+              >
+            </div>
+          </div>
+        </section>
+
+        <section class="dilivery">
+          <div class="container">
+            <h2 class="title">Доставка заказа</h2>
+
+            <div class="dilivery__title-box">
+              <img src="images/dilivery1.svg" alt="" />
+              <p class="dilivery__title">
+                Самовывоз со склада по адресу: УР, г. Ижевск, ул. Пушкинская 290.
+              </p>
+            </div>
+
+            <div class="dilivery__map">
+              <iframe
+                class="contact__map-radius"
+                id="map_419990843"
+                frameborder="0"
+                width="100%"
+                height="344px"
+                sandbox="allow-modals allow-forms allow-scripts allow-same-origin allow-popups allow-top-navigation-by-user-activation">
+              </iframe>
+              <script type="text/javascript">
+                (function (e, t) {
+                  var r = document.getElementById(e);
+                  r.contentWindow.document.open(),
+                    r.contentWindow.document.write(atob(t)),
+                    r.contentWindow.document.close();
+                })(
+                  'map_419990843',
+                  'PGJvZHk+PHN0eWxlPgogICAgICAgIGh0bWwsIGJvZHkgewogICAgICAgICAgICBtYXJnaW46IDA7CiAgICAgICAgICAgIHBhZGRpbmc6IDA7CiAgICAgICAgfQogICAgICAgIGh0bWwsIGJvZHksICNtYXAgewogICAgICAgICAgICB3aWR0aDogMTAwJTsKICAgICAgICAgICAgaGVpZ2h0OiAxMDAlOwogICAgICAgIH0KICAgICAgICAuYnVsbGV0LW1hcmtlciB7CiAgICAgICAgICAgIHdpZHRoOiAyMHB4OwogICAgICAgICAgICBoZWlnaHQ6IDIwcHg7CiAgICAgICAgICAgIGJveC1zaXppbmc6IGJvcmRlci1ib3g7CiAgICAgICAgICAgIGJhY2tncm91bmQtY29sb3I6ICNmZmY7CiAgICAgICAgICAgIGJveC1zaGFkb3c6IDAgMXB4IDNweCAwIHJnYmEoMCwgMCwgMCwgMC4yKTsKICAgICAgICAgICAgYm9yZGVyOiA0cHggc29saWQgIzAyODFmMjsKICAgICAgICAgICAgYm9yZGVyLXJhZGl1czogNTAlOwogICAgICAgIH0KICAgICAgICAucGVybWFuZW50LXRvb2x0aXAgewogICAgICAgICAgICBiYWNrZ3JvdW5kOiBub25lOwogICAgICAgICAgICBib3gtc2hhZG93OiBub25lOwogICAgICAgICAgICBib3JkZXI6IG5vbmU7CiAgICAgICAgICAgIHBhZGRpbmc6IDZweCAxMnB4OwogICAgICAgICAgICBjb2xvcjogIzI2MjYyNjsKICAgICAgICB9CiAgICAgICAgLnBlcm1hbmVudC10b29sdGlwOmJlZm9yZSB7CiAgICAgICAgICAgIGRpc3BsYXk6IG5vbmU7CiAgICAgICAgfQogICAgICAgIC5kZy1wb3B1cF9oaWRkZW5fdHJ1ZSB7CiAgICAgICAgICAgIGRpc3BsYXk6IGJsb2NrOwogICAgICAgIH0KICAgICAgICAubGVhZmxldC1jb250YWluZXIgLmxlYWZsZXQtcG9wdXAgLmxlYWZsZXQtcG9wdXAtY2xvc2UtYnV0dG9uIHsKICAgICAgICAgICAgdG9wOiAwOwogICAgICAgICAgICByaWdodDogMDsKICAgICAgICAgICAgd2lkdGg6IDIwcHg7CiAgICAgICAgICAgIGhlaWdodDogMjBweDsKICAgICAgICAgICAgZm9udC1zaXplOiAyMHB4OwogICAgICAgICAgICBsaW5lLWhlaWdodDogMTsKICAgICAgICB9CiAgICA8L3N0eWxlPjxkaXYgaWQ9Im1hcCI+PC9kaXY+PHNjcmlwdCB0eXBlPSJ0ZXh0L2phdmFzY3JpcHQiIHNyYz0iaHR0cHM6Ly9tYXBzLmFwaS4yZ2lzLnJ1LzIuMC9sb2FkZXIuanM/cGtnPWZ1bGwmYW1wO3NraW49bGlnaHQiPjwvc2NyaXB0PjxzY3JpcHQ+KGZ1bmN0aW9uKGUpe3ZhciB0PUpTT04ucGFyc2UoZSkscj10Lm9yZGVyZWRHZW9tZXRyaWVzLG49dC5tYXBQb3NpdGlvbixhPXQuaXNXaGVlbFpvb21FbmFibGVkO2Z1bmN0aW9uIG8oZSl7cmV0dXJuIGRlY29kZVVSSUNvbXBvbmVudChhdG9iKGUpLnNwbGl0KCIiKS5tYXAoZnVuY3Rpb24oZSl7cmV0dXJuIiUiKygiMDAiK2UuY2hhckNvZGVBdCgwKS50b1N0cmluZygxNikpLnNsaWNlKC0yKX0pLmpvaW4oIiIpKX1ERy50aGVuKGZ1bmN0aW9uKCl7dmFyIGU9REcubWFwKCJtYXAiLHtjZW50ZXI6W24ubGF0LG4ubG9uXSx6b29tOm4uem9vbSxzY3JvbGxXaGVlbFpvb206YSx6b29tQ29udHJvbDohYX0pO0RHLmdlb0pTT04ocix7c3R5bGU6ZnVuY3Rpb24oZSl7dmFyIHQscixuLGEsbztyZXR1cm57ZmlsbENvbG9yOm51bGw9PT0odD1lKXx8dm9pZCAwPT09dD92b2lkIDA6dC5wcm9wZXJ0aWVzLmZpbGxDb2xvcixmaWxsT3BhY2l0eTpudWxsPT09KHI9ZSl8fHZvaWQgMD09PXI/dm9pZCAwOnIucHJvcGVydGllcy5maWxsT3BhY2l0eSxjb2xvcjpudWxsPT09KG49ZSl8fHZvaWQgMD09PW4/dm9pZCAwOm4ucHJvcGVydGllcy5zdHJva2VDb2xvcix3ZWlnaHQ6bnVsbD09PShhPWUpfHx2b2lkIDA9PT1hP3ZvaWQgMDphLnByb3BlcnRpZXMuc3Ryb2tlV2lkdGgsb3BhY2l0eTpudWxsPT09KG89ZSl8fHZvaWQgMD09PW8/dm9pZCAwOm8ucHJvcGVydGllcy5zdHJva2VPcGFjaXR5fX0scG9pbnRUb0xheWVyOmZ1bmN0aW9uKGUsdCl7cmV0dXJuInJhZGl1cyJpbiBlLnByb3BlcnRpZXM/REcuY2lyY2xlKHQsZS5wcm9wZXJ0aWVzLnJhZGl1cyk6REcubWFya2VyKHQse2ljb246ZnVuY3Rpb24oZSl7cmV0dXJuIERHLmRpdkljb24oe2h0bWw6IjxkaXYgY2xhc3M9J2J1bGxldC1tYXJrZXInIHN0eWxlPSdib3JkZXItY29sb3I6ICIrZSsiOyc+PC9kaXY+IixjbGFzc05hbWU6Im92ZXJyaWRlLWRlZmF1bHQiLGljb25TaXplOlsyMCwyMF0saWNvbkFuY2hvcjpbMTAsMTBdfSl9KGUucHJvcGVydGllcy5jb2xvcil9KX0sb25FYWNoRmVhdHVyZTpmdW5jdGlvbihlLHQpe2UucHJvcGVydGllcy5kZXNjcmlwdGlvbiYmdC5iaW5kUG9wdXAobyhlLnByb3BlcnRpZXMuZGVzY3JpcHRpb24pLHtjbG9zZUJ1dHRvbjohMCxjbG9zZU9uRXNjYXBlS2V5OiEwfSksZS5wcm9wZXJ0aWVzLnRpdGxlJiZ0LmJpbmRUb29sdGlwKG8oZS5wcm9wZXJ0aWVzLnRpdGxlKSx7cGVybWFuZW50OiEwLG9wYWNpdHk6MSxjbGFzc05hbWU6InBlcm1hbmVudC10b29sdGlwIn0pfX0pLmFkZFRvKGUpfSl9KSgneyJvcmRlcmVkR2VvbWV0cmllcyI6W3sidHlwZSI6IkZlYXR1cmUiLCJwcm9wZXJ0aWVzIjp7InRpdGxlIjoiWW05cmMyMWxaQT09IiwiZGVzY3JpcHRpb24iOiIiLCJjb2xvciI6IiMwMjgxZjIiLCJ6SW5kZXgiOjEwMDAwMDAwMDB9LCJnZW9tZXRyeSI6eyJ0eXBlIjoiUG9pbnQiLCJjb29yZGluYXRlcyI6WzM3LjY0MTkzOSw1NS43NTY1MjRdfSwiaWQiOjI1OH1dLCJtYXBQb3NpdGlvbiI6eyJsYXQiOjU1Ljc1NjgwNjIzODI3MjA1LCJsb24iOjM3LjY0MjA4OTEyODQ5NDI3LCJ6b29tIjoxOH0sImlzV2hlZWxab29tRW5hYmxlZCI6dHJ1ZX0nKTwvc2NyaXB0PjxzY3JpcHQgYXN5bmM9IiIgdHlwZT0idGV4dC9qYXZhc2NyaXB0IiBzcmM9Imh0dHBzOi8vd3d3Lmdvb2dsZXRhZ21hbmFnZXIuY29tL2d0YWcvanM/aWQ9VUEtMTU4ODY2MTY4LTEiPjwvc2NyaXB0PjxzY3JpcHQgdHlwZT0idGV4dC9qYXZhc2NyaXB0Ij4oZnVuY3Rpb24oZSl7ZnVuY3Rpb24gdCgpe2RhdGFMYXllci5wdXNoKGFyZ3VtZW50cyl9d2luZG93LmRhdGFMYXllcj13aW5kb3cuZGF0YUxheWVyfHxbXSx0KCJqcyIsbmV3IERhdGUpLHQoImNvbmZpZyIsZSksd2luZG93Lmd0YWc9dH0pKCdVQS0xNTg4NjYxNjgtMScpPC9zY3JpcHQ+PC9ib2R5Pg==',
+                );
+              </script>
+            </div>
+
+            <div class="dilivery__title-box">
+              <img src="images/dilivery2.svg" alt="" />
+              <p class="dilivery__title">Доставка ведущими Транспортными компаниями</p>
+            </div>
+            <p class="dilivery__text">
+              Мы осуществляем доставку любыми транспортными компаниями: Деловые Линии, СДЭК, ПЭК, по
+              установленным тарифам на перевозки. При необходимости осуществляем индивидуальную
+              доставку через другие службы доставки.
+            </p>
+
+            <div class="dilivery__calculate">
+              <div class="dilivery__calculate-header">
+                <h3 class="dilivery__calculate-title">Онлайн-калькулятор стоимости доставки</h3>
+              </div>
+
+              <div class="dilivery__calculate-wrapper">
+                <div class="dilivery__calculate-city">
+                  <select class="dilivery__calculate-select" name="" id="">
+                    <option value="">город отправитель</option>
+                  </select>
+
+                  <select class="dilivery__calculate-select" name="" id="">
+                    <option value="">город получатель</option>
+                  </select>
+                </div>
+
+                <div class="dilivery__calculate-sizes">
+                  <div class="dilivery__calculate-weight">
+                    <p class="dilivery__calculate-name">Вес:</p>
+                    <div class="dilivery__calculate-panel">
+                      <button class="dilivery__panel-btn">
+                        <img class="dilivery__panel-btn-minus" src="images/minus.svg" alt="" />
+                      </button>
+                      <p class="dilivery__panel-btn-text">Кг</p>
+                      <button class="dilivery__panel-btn">
+                        <img src="images/plus.svg" class="dilivery__panel-btn-plus" alt="" />
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="dilivery__calculate-length">
+                    <p class="dilivery__calculate-name">Длина</p>
+                    <div class="dilivery__calculate-panel">
+                      <button class="dilivery__panel-btn">
+                        <img src="images/minus.svg" class="dilivery__panel-btn-minus" />
+                      </button>
+                      <p class="dilivery__panel-btn-text">Длина:</p>
+                      <button class="dilivery__panel-btn">
+                        <img src="images/plus.svg" class="dilivery__panel-btn-plus" />
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="dilivery__calculate-width">
+                    <p class="dilivery__calculate-name">Ширина:</p>
+                    <div class="dilivery__calculate-panel">
+                      <button class="dilivery__panel-btn">
+                        <img src="images/minus.svg" class="dilivery__panel-btn-minus" />
+                      </button>
+                      <p class="dilivery__panel-btn-text">Длина</p>
+                      <button class="dilivery__panel-btn">
+                        <img src="images/plus.svg" class="dilivery__panel-btn-plus" />
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="dilivery__calculate-choice">
+                    <div class="dilivery__calculate-point">
+                      <div class="dilivery__calculate-point-select"></div>
+                      <p class="dilivery__calculate-point-text">
+                        доставка до пункта выдачи заказов
+                      </p>
+                    </div>
+                    <div class="dilivery__calculate-point">
+                      <div class="dilivery__calculate-point-select"></div>
+                      <p class="dilivery__calculate-point-text">доставка курьером до двери</p>
+                    </div>
+                  </div>
+                </div>
+
+                <button class="dilivery__calculate-button promo__box-link">Расчитать</button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__inner">
+            <div class="footer__one">
+              <a href="index.html">
+                <img class="footer__one-img" src="images/logo.svg" alt="logo" />
+              </a>
+
+              <ul class="footer__one-list">
+                <li class="footer__one-item">
+                  <a href="#" class="footer__one-item-a">
+                    <img src="images/viber.svg" alt="viber" class="footer__one-item-img" />
+                  </a>
+                </li>
+                <li class="footer__one-item">
+                  <a href="#" class="footer__one-item-a">
+                    <img src="images/telegram.svg" alt="telegram" class="footer__one-item-img" />
+                  </a>
+                </li>
+                <li class="footer__one-item">
+                  <a href="#" class="footer__one-item-a">
+                    <img src="images/whatsapp.svg" alt="whatsapp" class="footer__one-item-img" />
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <ul class="footer__two-list">
+              <li class="footer__two-item">
+                <a href="#" class="footer__two-a">О компании</a>
+              </li>
+              <li class="footer__two-item">
+                <a href="#" class="footer__two-a">Производители</a>
+              </li>
+              <li class="footer__two-item">
+                <a href="#" class="footer__two-a">Доставка</a>
+              </li>
+              <li class="footer__two-item">
+                <a href="#" class="footer__two-a">Оплата</a>
+              </li>
+            </ul>
+
+            <ul class="footer__three-list">
+              <li class="footer__three-item">
+                <a href="#" class="footer__three-a">Каталог</a>
+              </li>
+              <li class="footer__three-item">
+                <a href="#" class="footer__three-a">Новости</a>
+              </li>
+              <li class="footer__three-item">
+                <a href="#" class="footer__three-a">Реквизиты</a>
+              </li>
+              <li class="footer__three-item">
+                <a href="#" class="footer__three-a">Контакты</a>
+              </li>
+            </ul>
+
+            <div class="footer__right">
+              <div class="footer__four">
+                <a class="footer__four-a" href="order-call.html">Заказать обратный звонок</a>
+                <p class="footer__four-p">
+                  Россия, Удмуртская Республика 426011, г. Ижевск, ул. Пушкинская 290 тел. 8 (3412)
+                  65-08-77
+                </p>
+              </div>
+
+              <div class="footer__five">
+                <a class="footer__five-a" href="#">Политика конфиденциальности</a>
+                <p class="footer__five-p">
+                  ООО «Boksmed» © 2015 - 2022. Сайт носит информационный характер и не является
+                  публичной офертой.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer__wrapper">
+            <img class="footer__wrapper-img" src="images/viber1.svg" alt="viber" />
+            <img class="footer__wrapper-img" src="images/up.svg" alt="up" />
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
