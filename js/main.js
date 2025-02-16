@@ -130,3 +130,20 @@ if (aboutBtn) {
     };
   });
 }
+
+// chat
+
+const btnChat = document.getElementById('btn-chat');
+const chat = document.querySelector('.chat');
+
+if (btnChat) {
+  btnChat.onclick = (e) => {
+    chat.classList.add('active');
+
+    const chatExit = document.getElementById('chat-exit');
+
+    chatExit.onclick = () => {
+      chat.classList.remove('active');
+    };
+  };
+}
