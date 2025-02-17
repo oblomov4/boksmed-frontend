@@ -2041,6 +2041,233 @@ input {
   cursor: pointer;
 }
 
+/* orders */
+
+.orders {
+  margin-bottom: 80px;
+}
+.container {
+}
+.orders__top {
+  display: flex;
+  justify-content: space-between;
+}
+.title {
+}
+.orders__top-title {
+}
+.orders__top-right {
+  display: flex;
+  gap: 11px;
+  align-items: start;
+}
+.orders__top-img {
+  align-self: flex-start;
+}
+.orders__top-text {
+  font-size: 14px;
+}
+
+.orders__inner {
+  border-radius: 15px;
+  background-color: #fff;
+  padding: 40px 0;
+  box-shadow: inset 0 1px 5px rgba(50, 87, 164, 0.25);
+}
+
+/* ИИ */
+
+.grid-table {
+  display: grid;
+  grid-template-columns: minmax(20px, 110px) minmax(50px, 179px) auto auto auto auto; /* Автоматические размеры колонок */
+}
+
+.grid-table .cell {
+  padding: 10px;
+  border-bottom: 1px solid #497ae2;
+  display: flex;
+  align-items: center;
+}
+
+.cell-title {
+  font-size: 10px;
+}
+
+.cell-name-product {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.cell-price {
+  font-size: 20px;
+}
+
+.cell.cell-img {
+  padding: 0;
+}
+
+.cell.img {
+  padding: 0;
+}
+
+.cell-cont {
+  font-size: 20px;
+}
+
+.cell-date {
+  font-size: 20px;
+}
+
+.grid-table .cell img {
+  width: 100%;
+  height: 100%;
+}
+
+/* grade */
+
+.grade {
+  margin-bottom: 85px;
+}
+
+.grade-table {
+  display: grid;
+  grid-template-columns:
+    minmax(20px, 110px) minmax(50px, 179px) minmax(50px, 350px) minmax(50px, 153px)
+    auto;
+}
+.grade-cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border-bottom: 1px solid #497ae2;
+}
+.cell-title {
+}
+.grade-cell.cell-img {
+  padding: 0;
+}
+.cell-name-product {
+}
+.cell-grade {
+}
+.grade-box {
+}
+.grade-box-img {
+  width: 20px;
+}
+.cell-count {
+}
+.grade-cell-textarea {
+  max-width: 304px;
+  width: 100%;
+  height: 82px;
+  border-radius: 15px;
+  border: none;
+  box-shadow: inset 0 1px 5px #3257a4;
+  padding: 15px 14px;
+}
+
+/* Адаптивность для мобильных устройств */
+@media (max-width: 768px) {
+  .grid-table {
+    grid-template-columns: 1fr;
+  }
+
+  .grid-table.header {
+    display: none;
+  }
+
+  .grid-table .cell {
+    display: grid;
+    grid-template-columns: 100px 2fr;
+    gap: 10px;
+    align-items: center;
+    white-space: normal; /* Разрешает перенос текста на мобильных */
+  }
+
+  .grid-table .cell::before {
+    content: attr(data-label);
+    font-weight: bold;
+    color: #333;
+  }
+}
+
+/* admin-login */
+
+.admin-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.login-form {
+  /* background-color: white;
+  border: 1px solid #d6e4ff; */
+  /* border-radius: 15px;
+  padding: 30px;
+  width: 400px;
+  box-sizing: border-box; */
+  max-width: 1020px;
+  width: 100%;
+}
+
+.login-form__top {
+  background-color: #fff;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border: 1px solid #497ae2;
+  padding: 40px 105px 40px 105px;
+}
+.login-form__title {
+  font-size: 24px;
+  font-weight: 500;
+  color: #3257a4;
+}
+
+.login__form-content {
+  border: 1px solid #497ae2;
+  border-top: none;
+  padding: 50px 105px 60px 105px;
+  background-color: #f7f9fb;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.login-form__fields {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.login-form__input {
+  max-width: 390px;
+  width: 100%;
+  padding: 20px 40px;
+  border-radius: 15px;
+  box-shadow: inset 0 0 3px rgba(50, 87, 164, 0.25);
+  font-family: inherit;
+  font-size: 18px;
+}
+.login-form__input::placeholder {
+  font-size: #1111;
+}
+.login-form__input:focus {
+  outline: none;
+  border-color: #3366cc;
+}
+
+.login-form__forgot-password {
+  text-align: right;
+  font-size: 10px;
+  margin-bottom: 5px;
+}
+
+.login-form__button {
+}
+.login-form__button:hover {
+}
+
 /* footer */
 .footer {
   background-color: #232323;
