@@ -147,3 +147,5 @@ if (btnChat) {
     };
   };
 }
+
+const collapsibleSectionHeaders = document.querySelectorAll('.collapsible-section__header');

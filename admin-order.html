@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="admin-container">
+      <aside class="sidebar">
+        <a href="#">Список заказов</a>
+        <a href="#">Данные пользователей</a>
+        <a href="#">Обратная связь</a>
+        <a href="#">Товары</a>
+        <a href="#">Мероприятия</a>
+      </aside>
+
+      <main class="main-content">
+        <h2 class="title main-content-title">Список заказов</h2>
+
+        <div class="orders__inner">
+          <div class="admin-user-table">
+            <!-- title -->
+            <div class="admin-cell cell-title">Фото</div>
+            <div class="admin-cell cell-title">товар</div>
+            <div class="admin-cell cell-title">цена</div>
+            <div class="admin-cell cell-title">количество</div>
+            <div class="admin-cell cell-title">сумма</div>
+            <!--end title -->
+
+            <!-- block -->
+            <div class="admin-cell cell-img" data-label="Фото">
+              <img src="images/orders1.png" alt="Товар 1" />
+            </div>
+            <div class="admin-cell cell-name-product" data-label="товар">
+              АВТОМАТИЧЕСКИЙ ДЕФИБРИЛЛЯТОР PRIMEDIC HEARTSAVE PAD
+            </div>
+            <div class="admin-cell cell-grade" data-label="цена">17 500 р</div>
+            <div class="admin-cell cell-count" data-label="количество">1</div>
+            <div class="admin-cell cell-count" data-label="сумма">17 500 р</div>
+            <!-- end block -->
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

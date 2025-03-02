@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="admin-container">
+      <aside class="sidebar">
+        <a href="#">Список заказов</a>
+        <a href="#">Данные пользователей</a>
+        <a href="#">Обратная связь</a>
+        <a href="#">Товары</a>
+        <a href="#">Мероприятия</a>
+      </aside>
+
+      <main class="main-content">
+        <h2 class="title main-content-title">Мероприятия (события)</h2>
+
+        <div class="events__top">
+          <div class="event__top-input-wrapper">
+            <input placeholder="Введите запрос" class="events__top-search" type="text" />
+          </div>
+
+          <button class="events__top-btn promo__box-link">
+            <img src="images/plus.svg" alt="" />Добавить событие
+          </button>
+        </div>
+
+        <div class="orders__inner">
+          <div class="events-table">
+            <!-- title -->
+
+            <div class="admin-cell cell-title">фото</div>
+            <div class="admin-cell cell-title">название</div>
+            <div class="admin-cell cell-title">описание</div>
+            <div class="admin-cell cell-title">дата</div>
+            <div class="admin-cell cell-title">Видимость</div>
+            <div class="admin-cell cell-title">Удалить</div>
+            <!--end title -->
+
+            <!-- block -->
+
+            <div class="admin-cell cell-img" data-label="Фото">
+              <img src="images/orders1.png" alt="Товар 1" />
+            </div>
+            <div class="admin-cell" data-label="название">Название события</div>
+            <div class="admin-cell" data-label="ИНН">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro rem quae consequatur
+              nostrum, repudiandae qui reprehenderit odio earum. Cupiditate odit magni ipsam,
+              ratione aspernatur illum ipsum at! Vero, nemo esse.
+            </div>
+            <div class="admin-cell" data-label="дата">20.02.2025</div>
+            <div class="admin-cell cell-visible" data-label="видимость">
+              <label class="switch">
+                <input type="checkbox" checked />
+                <span class="slider"></span>
+              </label>
+            </div>
+            <div class="admin-cell" data-label="дата">
+              <button><img src="images/del.png" alt="" /></button>
+            </div>
+            <!-- end block -->
+          </div>
+        </div>
+
+        <div class="event-add">
+          <button class="">Сохранить</button>
+          <div class="event-add__box">
+            <h3 class="event-add__box-title">Название</h3>
+            <input placeholder="Названия события" type="text" />
+          </div>
+
+          <div class="event-add__box">
+            <h3 class="event-add__box-title">описание</h3>
+            <input placeholder="Описаниея события" type="text" />
+          </div>
+
+          <div class="event-add__box">
+            <h3 class="event-add__box-title">Дата</h3>
+            <input placeholder="дата" type="text" />
+          </div>
+
+          <div class="event-add__box">
+            <h3 class="event-add__box-title">изображения</h3>
+            <input placeholder="дата" type="file" value="Загрузить файл" />
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

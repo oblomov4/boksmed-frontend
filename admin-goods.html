@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="admin-container">
+      <aside class="sidebar">
+        <a href="#">Список заказов</a>
+        <a href="#">Данные пользователей</a>
+        <a href="#">Обратная связь</a>
+        <a href="#">Товары</a>
+        <a href="#">Мероприятия</a>
+      </aside>
+
+      <main class="main-content">
+        <h2 class="title main-content-title">Суворова В.П</h2>
+        <a class="admin-link-back" href="#">Назад</a>
+
+        <div class="admin__goods-btn-wrapper">
+          <button class="chapter-btn">Разделы каталога</button>
+          <button class="goods-new-good">
+            <img class="plus" src="images/plus.svg" alt="" />Добавить товар
+          </button>
+        </div>
+
+        <div class="admin__goods-bottom">
+          <div class="admin__goods-filter">
+            По разделам: <button class="admin__goods-filter-btn">Все</button>
+          </div>
+
+          <div class="search-wrapper">
+            <input class="admin__goods-search" placeholder="Введите запрос" type="text" />
+          </div>
+        </div>
+
+        <div class="orders__inner">
+          <div class="admin-goods-table">
+            <!-- title -->
+            <div class="admin-cell cell-title">Фото</div>
+            <div class="admin-cell cell-title">товар</div>
+            <div class="admin-cell cell-title">арктикул</div>
+            <div class="admin-cell cell-title">цена</div>
+            <div class="admin-cell cell-title">количество</div>
+            <div class="admin-cell cell-title">видимость</div>
+            <div class="admin-cell cell-title">удалить</div>
+            <!--end title -->
+
+            <!-- block -->
+            <div class="admin-cell cell-img" data-label="Фото">
+              <img src="images/orders1.png" alt="Товар 1" />
+            </div>
+            <div class="admin-cell cell-name-product" data-label="товар">
+              АВТОМАТИЧЕСКИЙ ДЕФИБРИЛЛЯТОР PRIMEDIC HEARTSAVE PAD
+            </div>
+            <div class="admin-cell cell-grade" data-label="арктикул">000 234</div>
+            <div class="admin-cell cell-price" data-label="цена">цена</div>
+            <div class="admin-cell cell-count" data-label="количество">
+              <input value="10" type="number" />
+            </div>
+            <div class="admin-cell cell-visible" data-label="видимость">
+              <label class="switch">
+                <input type="checkbox" checked />
+                <span class="slider"></span>
+              </label>
+            </div>
+            <div class="admin-cell cell-delete" data-label="количество">
+              <button><img src="images/del.png" alt="удалить" /></button>
+            </div>
+            <!-- end block -->
+          </div>
+        </div>
+
+        <!-- <div class="category">
+          <div class="category__title-wrapper">
+            <h3 class="category__title">Разделы каталога</h3>
+            <button><img src="images/close.png" alt="close" /></button>
+          </div>
+          <div class="category__box">
+            <div class="category__box-name">Дефибриляторы</div>
+            <div class="category__box-btns">
+              <button class="category__box-edit">
+                <img src="images/edit.png" alt="" class="category__box-img" />
+              </button>
+
+              <button class="category__box-edit">
+                <img src="images/del.png" alt="" class="category__box-img" />
+              </button>
+            </div>
+          </div>
+
+          <div class="category__box">
+            <div class="category__box-name">Сшивающие инструменты</div>
+            <div class="category__box-btns">
+              <button class="category__box-edit">
+                <img src="images/edit.png" alt="" class="category__box-img" />
+              </button>
+
+              <button class="category__box-edit">
+                <img src="images/del.png" alt="" class="category__box-img" />
+              </button>
+            </div>
+          </div>
+
+          <div class="category__box">
+            <div class="category__box-name">Медицинский инструмент</div>
+            <div class="category__box-btns">
+              <button class="category__box-edit">
+                <img src="images/edit.png" alt="" class="category__box-img" />
+              </button>
+
+              <button class="category__box-edit">
+                <img src="images/del.png" alt="" class="category__box-img" />
+              </button>
+            </div>
+          </div>
+
+          <div class="category__box">
+            <div class="category__box-name">Импланты</div>
+            <div class="category__box-btns">
+              <button class="category__box-edit">
+                <img src="images/edit.png" alt="" class="category__box-img" />
+              </button>
+
+              <button class="category__box-edit">
+                <img src="images/del.png" alt="" class="category__box-img" />
+              </button>
+            </div>
+          </div>
+
+          <div class="category__box">
+            <div class="category__box-name">Концентраторы</div>
+            <div class="category__box-btns">
+              <button class="category__box-edit">
+                <img src="images/edit.png" alt="" class="category__box-img" />
+              </button>
+
+              <button class="category__box-edit">
+                <img src="images/del.png" alt="" class="category__box-img" />
+              </button>
+            </div>
+          </div>
+
+          <div class="category__box">
+            <div class="category__box-name">Концентраторы</div>
+            <div class="category__box-btns">
+              <button class="category__box-edit">
+                <img src="images/edit.png" alt="" class="category__box-img" />
+              </button>
+
+              <button class="category__box-edit">
+                <img src="images/del.png" alt="" class="category__box-img" />
+              </button>
+            </div>
+          </div>
+
+          <div class="category__box">
+            <div class="category__box-name">Концентраторы</div>
+            <div class="category__box-btns">
+              <button class="category__box-edit">
+                <img src="images/edit.png" alt="" class="category__box-img" />
+              </button>
+
+              <button class="category__box-edit">
+                <img src="images/del.png" alt="" class="category__box-img" />
+              </button>
+            </div>
+          </div>
+
+          <div class="category__box">
+            <div class="category__box-name">Концентраторы</div>
+            <div class="category__box-btns">
+              <button class="category__box-edit">
+                <img src="images/edit.png" alt="" class="category__box-img" />
+              </button>
+
+              <button class="category__box-edit">
+                <img src="images/del.png" alt="" class="category__box-img" />
+              </button>
+            </div>
+          </div>
+
+          <div class="category__box">
+            <div class="category__box-name">Концентраторы</div>
+            <div class="category__box-btns">
+              <button class="category__box-edit">
+                <img src="images/edit.png" alt="" class="category__box-img" />
+              </button>
+
+              <button class="category__box-edit">
+                <img src="images/del.png" alt="" class="category__box-img" />
+              </button>
+            </div>
+          </div>
+
+          <div class="category__box">
+            <div class="category__box-name">Концентраторы</div>
+            <div class="category__box-btns">
+              <button class="category__box-edit">
+                <img src="images/edit.png" alt="" class="category__box-img" />
+              </button>
+
+              <button class="category__box-edit">
+                <img src="images/del.png" alt="" class="category__box-img" />
+              </button>
+            </div>
+          </div>
+
+          <button class="promo__box-link category-btn">
+            <img src="images/plus.svg" alt="" />Добавить раздел
+          </button>
+        </div> -->
+
+        <!-- <div class="category-add">
+          <div class="category-add__top">
+            <h3 class="category-add__title">Создать новый раздел</h3>
+            <button><img src="images/close.png" alt="" /></button>
+          </div>
+
+          <div class="category-add__content-wrapper">
+            <div class="category-add__content">
+              <div class="category-add__input-wrapper">
+                <label for="">Название</label>
+                <input type="text" />
+              </div>
+            </div>
+          </div>
+
+          <div class="category-add__btn-wrapper">
+            <button class="promo__box-link category-add__btn">Добавить раздел</button>
+          </div>
+        </div> -->
+      </main>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="admin-container">
+      <aside class="sidebar">
+        <a href="#">Список заказов</a>
+        <a href="#">Данные пользователей</a>
+        <a href="#">Обратная связь</a>
+        <a href="#">Товары</a>
+        <a href="#">Мероприятия</a>
+      </aside>
+
+      <main class="main-content">
+        <h2 class="title main-content-title">Пользователи</h2>
+
+        <div class="orders__inner">
+          <div class="users-table">
+            <!-- title -->
+            <div class="admin-cell cell-title">№</div>
+            <div class="admin-cell cell-title">Пользователь</div>
+            <div class="admin-cell cell-title">данные организации</div>
+            <div class="admin-cell cell-title">ИНН</div>
+            <div class="admin-cell cell-title">статус</div>
+            <!--end title -->
+
+            <!-- block -->
+            <div class="admin-cell admin-cell--decor" data-label="№">1</div>
+            <div class="admin-cell admin-cell--decor" data-label="Пользователь">Суворова В.П</div>
+            <div class="admin-cell admin-cell--decor" data-label="данные организации">
+              ИП Суворова
+            </div>
+            <div class="admin-cell admin-cell--decor" data-label="ИНН">ИНН 4567894321</div>
+            <div class="admin-cell admin-cell--decor" data-label="статус">гость</div>
+            <!-- end block -->
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

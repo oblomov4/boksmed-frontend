@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="admin-container">
+      <aside class="sidebar">
+        <a href="#">Список заказов</a>
+        <a href="#">Данные пользователей</a>
+        <a href="#">Обратная связь</a>
+        <a href="#">Товары</a>
+        <a href="#">Мероприятия</a>
+      </aside>
+
+      <main class="main-content">
+        <h2 class="title main-content-title">Чаты с пользователями</h2>
+        <a class="admin-link-back" href="#">Назад</a>
+
+        <div class="orders__inner">
+          <div class="admin-chat-table">
+            <!-- title -->
+            <div class="admin-cell cell-title">№</div>
+            <div class="admin-cell cell-title">Пользователь</div>
+            <div class="admin-cell cell-title">Дата</div>
+            <div class="admin-cell cell-title">Статус</div>
+            <div class="admin-cell cell-title"></div>
+            <!--end title -->
+
+            <!-- block -->
+            <div class="admin-cell list-order-cell--decor" data-label="№">1</div>
+            <div class="admin-cell list-order-cell--decor" data-label="Пользователь">
+              Суворова В.П
+            </div>
+            <div class="admin-cell admin-cell--decor" data-label="дата">23.05.22</div>
+            <div class="admin-cell admin-cell--decor" data-label="статус">ждет ответа</div>
+            <div class="admin-cell admin-cell--decor" data-label="статус">
+              <button class="admin-chat-btn">перейти в чат</button>
+            </div>
+            <!-- end block -->
+          </div>
+        </div>
+
+        <section class="chat">
+          <div class="container">
+            <div class="chat__wrapper">
+              <div class="chat__box">
+                <a href="index.html">
+                  <img src="images/chat-logo.svg" alt="" class="chat__box-logo" />
+                </a>
+                <h3 class="chat__box-title">Служба поддержки</h3>
+
+                <div class="chat__box-inner">
+                  <div class="chat__box-message">
+                    <div class="message-shop message">
+                      <span class="message-shop-name">Поддержка bosmed</span>
+                      <p class="message-shopt-text">
+                        Добрый день, .. имя человека. Чем мы можем вам помочь?
+                      </p>
+                      <span class="message-shop-time">17:35</span>
+                    </div>
+
+                    <div class="message-user message">
+                      <span class="message-user-name">Вы</span>
+                      <p class="message-suser-text">Хочу сделать заказ</p>
+                      <span class="message-shop-time">17:35</span>
+                    </div>
+
+                    <div class="message-user message">
+                      <span class="message-user-name">Вы</span>
+                      <p class="message-suser-text">Хочу сделать заказ</p>
+                      <span class="message-shop-time">17:35</span>
+                    </div>
+
+                    <div class="message-user message">
+                      <span class="message-user-name">Вы</span>
+                      <p class="message-suser-text">Хочу сделать заказ</p>
+                      <span class="message-shop-time">17:35</span>
+                    </div>
+
+                    <div class="message-user message">
+                      <span class="message-user-name">Вы</span>
+                      <p class="message-suser-text">Хочу сделать заказ</p>
+                      <span class="message-shop-time">17:35</span>
+                    </div>
+
+                    <div class="message-user message">
+                      <span class="message-user-name">Вы</span>
+                      <p class="message-suser-text">Хочу сделать заказ</p>
+                      <span class="message-shop-time">17:35</span>
+                    </div>
+
+                    <div class="message-user message">
+                      <span class="message-user-name">Вы</span>
+                      <p class="message-suser-text">Хочу сделать заказ</p>
+                      <span class="message-shop-time">17:35</span>
+                    </div>
+                  </div>
+
+                  <textarea
+                    placeholder="Введите сообщение..."
+                    class="chat__box-textarea"></textarea>
+
+                  <button class="chat__box-btn promo__box-link">Отправить</button>
+                </div>
+                <button id="chat-exit" class="chat__exit">Х</button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
