@@ -67,29 +67,55 @@
           </div>
         </div>
 
-        <div class="event-add">
-          <button class="">Сохранить</button>
-          <div class="event-add__box">
-            <h3 class="event-add__box-title">Название</h3>
-            <input placeholder="Названия события" type="text" />
-          </div>
+        <div class="event-add-wrapper">
+          <div class="event-add">
+            <div class="event-add__save">
+              <button class="promo__box-link event-add__btn">Сохранить</button>
+              <button class="event-add__save-exit">
+                <img src="images/close-white.png" alt="exit" />
+              </button>
+            </div>
+            <div class="event-add__box">
+              <h3 class="event-add__box-title">Название</h3>
+              <input class="event-add__box-input" placeholder="Названия события" type="text" />
+            </div>
 
-          <div class="event-add__box">
-            <h3 class="event-add__box-title">описание</h3>
-            <input placeholder="Описаниея события" type="text" />
-          </div>
+            <div class="event-add__box">
+              <h3 class="event-add__box-title">описание</h3>
+              <input class="event-add__box-input" placeholder="Описаниея события" type="text" />
+            </div>
 
-          <div class="event-add__box">
-            <h3 class="event-add__box-title">Дата</h3>
-            <input placeholder="дата" type="text" />
-          </div>
+            <div class="event-add__box">
+              <h3 class="event-add__box-title">Дата</h3>
+              <input class="event-add__box-input" placeholder="дата" type="date" />
+            </div>
 
-          <div class="event-add__box">
-            <h3 class="event-add__box-title">изображения</h3>
-            <input placeholder="дата" type="file" value="Загрузить файл" />
+            <div class="event-add__box">
+              <h3 class="event-add__box-title">изображения</h3>
+              <input
+                class="event-add__box-input"
+                placeholder="дата"
+                type="file"
+                value="Загрузить файл"
+                id="img-load-input"
+                hidden />
+
+              <button class="event-add__btn-img promo__box-link">Загрузить файл</button>
+
+              <div class="preview">
+                <div class="image-loaded"><p>No files currently selected for upload</p></div>
+
+                <div class="image-buttons">
+                  <button class="image-buttton">заменить фото</button>
+                  <button class="image-buttons-del"><img src="images/del.png" alt="" /></button>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </main>
     </div>
+
+    <script src="js/file-load.js"></script>
   </body>
 </html>

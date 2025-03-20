@@ -234,7 +234,189 @@
             <button class="promo__box-link category-add__btn">Добавить раздел</button>
           </div>
         </div> -->
+
+        <div class="event-add-wrapper">
+          <div class="event-add">
+            <div class="event-add__save">
+              <button class="promo__box-link event-add__btn">Сохранить</button>
+              <button class="event-add__save-exit">
+                <img src="images/close-white.png" alt="exit" />
+              </button>
+            </div>
+            <div class="event-add__box">
+              <h3 class="event-add__box-title">заголовок</h3>
+              <input class="event-add__box-input" placeholder="Названия события" type="text" />
+            </div>
+
+            <div class="event-add__box">
+              <h3 class="event-add__box-title">описание</h3>
+              <input class="event-add__box-input" placeholder="Описаниея события" type="text" />
+            </div>
+
+            <div class="event-add__box-wrapper">
+              <div class="event-add__box">
+                <h3 class="event-add__box-title">артикул</h3>
+                <input class="event-add__box-input" placeholder="артикул" type="number" />
+              </div>
+
+              <div class="event-add__box event-add__box--two">
+                <h3 class="event-add__box-title">количество</h3>
+                <input class="event-add__box-input" placeholder="количество" type="number" />
+              </div>
+            </div>
+
+            <div class="event-add__box-wrapper">
+              <div class="event-add__box">
+                <h3 class="event-add__box-title">цена</h3>
+                <input class="event-add__box-input" placeholder="артикул" type="number" />
+              </div>
+
+              <div class="event-add__box event-add__box--two">
+                <h3 class="event-add__box-title">старая цена</h3>
+                <input class="event-add__box-input" placeholder="старая цена" type="number" />
+              </div>
+            </div>
+
+            <div class="event-add__box">
+              <h3 class="event-add__box-title">изображения</h3>
+              <input
+                class="event-add__box-input"
+                placeholder="дата"
+                type="file"
+                value="Загрузить файл"
+                id="img-load-input"
+                hidden />
+
+              <button class="event-add__btn-img promo__box-link">Загрузить файл</button>
+
+              <div class="preview-img">
+                <div class="image-loaded"></div>
+
+                <div class="image-buttons">
+                  <button class="image-buttton">заменить фото</button>
+                  <button class="image-buttons-del"><img src="images/del.png" alt="" /></button>
+                </div>
+              </div>
+            </div>
+
+            <div class="event-add__box">
+              <h3 class="event-add__box-title">видеообзор</h3>
+              <input
+                class="event-add__box-input"
+                placeholder="дата"
+                type="file"
+                value="Загрузить файл"
+                id="video-load-input"
+                hidden />
+
+              <button class="event-add__btn-video promo__box-link">Загрузить файл</button>
+
+              <div class="preview-video">
+                <div class="video-loaded"><p>No files currently selected for upload</p></div>
+
+                <div class="video-buttons">
+                  <button class="video-button">заменить фото</button>
+                  <button class="video-button-del"><img src="images/del.png" alt="" /></button>
+                </div>
+              </div>
+            </div>
+
+            <div class="event-add__box">
+              <h3 class="event-add__box-title">Технические характеристики</h3>
+              <textarea class="event-add__box-textarea" name="" id=""></textarea>
+            </div>
+
+            <div class="event-add__box">
+              <h3 class="event-add__box-title">Документы</h3>
+              <input
+                class="event-add__box-input"
+                placeholder="дата"
+                type="file"
+                value="Загрузить файл"
+                id="file-load-input"
+                hidden />
+              <input
+                class="event-add__box-input"
+                placeholder="дата"
+                type="file"
+                value="Загрузить файл"
+                id="video-change-input"
+                hidden />
+
+              <button class="event-add__btn-file promo__box-link">Загрузить файл</button>
+
+              <div class="preview-file"></div>
+            </div>
+
+            <div class="event-add__box">
+              <div class="event-add__box-reviews">
+                <h3>Отзывы</h3>
+                <img src="images/add-reviews.png" alt="" />
+              </div>
+            </div>
+
+            <div class="reviews-add-box">
+              <div class="event-add__box-wrapper">
+                <div class="event-add__box">
+                  <h3 class="event-add__box-title">Имя</h3>
+                  <input class="event-add__box-input" placeholder="Имя" type="text" />
+                </div>
+
+                <div class="event-add__box event-add__box--two">
+                  <h3 class="event-add__box-title">оценка</h3>
+                  <input class="event-add__box-input" placeholder="оценка" type="number" />
+                </div>
+              </div>
+
+              <div class="event-add__box">
+                <h3 class="event-add__box-title">отзыв</h3>
+                <textarea class="event-add__box-textarea" name="" id=""></textarea>
+              </div>
+            </div>
+
+            <div class="event-add__box">
+              <h3 class="event-add__box-title">УТП</h3>
+              <input class="event-add__box-input" placeholder="Описаниея события" type="text" />
+            </div>
+
+            <div class="event-add__box event-add__box-choice">
+              <h3 class="event-add__box-title">Раздел</h3>
+              <div class="choice-category">
+                Выберите раздел <img src="images/next-black.png" alt="" />
+              </div>
+            </div>
+
+            <div class="event-add__box">
+              <h3 class="event-add__box-title">размеры (сшивающие аппараты)</h3>
+
+              <fieldset>
+                <div class="four">
+                  <div>
+                    <input type="checkbox" id="scales" name="scales" checked />
+                    <label for="scales">29 мм</label>
+                  </div>
+                  <div>
+                    <input type="checkbox" id="scales" name="scales" checked />
+                    <label for="scales">29 мм</label>
+                  </div>
+
+                  <div>
+                    <input type="checkbox" id="scales" name="scales" checked />
+                    <label for="scales">29 мм</label>
+                  </div>
+
+                  <div>
+                    <input type="checkbox" id="scales" name="scales" checked />
+                    <label for="scales">29 мм</label>
+                  </div>
+                </div>
+              </fieldset>
+            </div>
+          </div>
+        </div>
       </main>
     </div>
+
+    <script src="js/goods-add.js"></script>
   </body>
 </html>

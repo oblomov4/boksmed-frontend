@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="container">
+          <div class="header__top">
+            <a class="header__top-logo-link" href="index.html">
+              <img src="images/logo.svg" alt="" class="header__top-img" />
+            </a>
+            <button class="header__top-catalog">Каталог</button>
+
+            <div class="header__top-input-wrapper">
+              <input
+                class="header__top-input"
+                type="text"
+                placeholder="Поиск медицинского оборудования" />
+            </div>
+
+            <a class="header__top-order-call" href="order-call.html">Заказать обратный звонок</a>
+
+            <a class="header__top-phone" href="tel:+73412650877">8 (3412) 65-08-77</a>
+
+            <ul class="header__top-list">
+              <li class="header__top-list-item">
+                <a class="header__top-list-a" href="#"
+                  ><img class="header__top-list-img" src="images/viber.svg" alt="viber"
+                /></a>
+              </li>
+              <li class="header__top-list-item">
+                <a class="header__top-list-a" href="#"
+                  ><img class="header__top-list-img" src="images/telegram.svg" alt="telegram"
+                /></a>
+              </li>
+              <li class="header__top-list-item">
+                <a class="header__top-list-a" href="#"
+                  ><img class="header__top-list-img" src="images/whatsapp.svg" alt="whatsapp"
+                /></a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="header__bottom">
+            <nav class="nav">
+              <ul class="nav__list">
+                <li class="nav__item">
+                  <a href="#" class="nav__item-a">О компании</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#" class="nav__item-a">Производители</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#" class="nav__item-a">Доставка</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#" class="nav__item-a">Оплата</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#" class="nav__item-a">Новости</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#" class="nav__item-a">Реквизиты</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#" class="nav__item-a">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+
+            <ul class="header__bottom-list">
+              <li class="header__bottom-item">
+                <a href="#" class="header__bottom-link">
+                  <img class="header__bottom-img" src="images/polylines.svg" alt="polylines" />
+                  Сравнения
+                </a>
+              </li>
+
+              <li class="header__bottom-item">
+                <a href="#" class="header__bottom-link">
+                  <img
+                    class="header__bottom-img"
+                    src="images/shopping-cart.svg"
+                    alt="shopping-cart" />
+                  Корзина
+                </a>
+              </li>
+
+              <li class="header__bottom-item">
+                <a href="#" class="header__bottom-link">
+                  <img class="header__bottom-img" src="images/doctor.svg" alt="doctor" />
+                  Личный кабинет
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </header>
+
+      <main class="main">
+        <section class="bread-crumbs">
+          <div class="container">
+            <div class="bread-crumbs__inner">
+              <a class="bread-crumbs__inner-a" href="index.html">Главная</a>
+              <a class="bread-crumbs__inner-a" href="order-call.html">Каталог</a>
+              <a class="bread-crumbs__inner-a" href="order-call.html">Сравнение товаров</a>
+              <a class="bread-crumbs__inner-a bread-crumbs__inner-a--active" href="order-call.html"
+                >Дефибриляторы</a
+              >
+            </div>
+          </div>
+        </section>
+
+        <section class="comparisons-cart">
+          <div class="container">
+            <h2 class="title">Сравнение товаров</h2>
+            <div class="comparisons-cart__top">
+              <button class="comparisons-cart__top-pechat">
+                <img src="images/pechat.png" alt="" />
+                Распечатать
+              </button>
+            </div>
+
+            <!-- <table class="comparison-table">
+              <thead>
+                <tr>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                </tr>
+
+                <tr>
+                  <th class="comparison-table__th-name">
+                    <h3 class="comparison-table__name">Дефибриляторы</h3>
+                  </th>
+
+                  <th>
+                    <div class="product" style="position: relative">
+                      <div class="product__close">
+                        <button class="product__remove">
+                          <img src="images/close.png" alt="" />
+                        </button>
+                      </div>
+                      <img src="images/prod1.png" alt="Дефибриллятор" />
+                      <h3 class="product__title">
+                        Автоматический дефибриллятор primedic heartsave pad
+                      </h3>
+                      <p class="product__price">136 000р</p>
+                    </div>
+                  </th>
+                  <th>
+                    <div class="product" style="position: relative">
+                      <div class="product__close">
+                        <button class="product__remove">
+                          <img src="images/close.png" alt="" />
+                        </button>
+                      </div>
+                      <img src="images/prod1.png" alt="Дефибриллятор" />
+                      <h3 class="product__title">
+                        Автоматический дефибриллятор primedic heartsave pad
+                      </h3>
+                      <p class="product__price">136 000р</p>
+                    </div>
+                  </th>
+                  <th>
+                    <div class="product" style="position: relative">
+                      <div class="product__close">
+                        <button class="product__remove">
+                          <img src="images/close.png" alt="" />
+                        </button>
+                      </div>
+
+                      <img src="images/prod1.png" alt="Дефибриллятор" />
+                      <h3 class="product__title">
+                        Автоматический дефибриллятор primedic heartsave pad
+                      </h3>
+                      <p class="product__price">136 000р</p>
+                    </div>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Артикул</td>
+                  <td>97609</td>
+                  <td>97609</td>
+                  <td>97609</td>
+                </tr>
+                <tr>
+                  <td>Бренд</td>
+                  <td>Primedic</td>
+                  <td>Primedic</td>
+                  <td>Primedic</td>
+                </tr>
+                <tr>
+                  <td>от полностью заряженной батареи</td>
+                  <td>140 разрядов по 360 Дж</td>
+                  <td>140 разрядов по 360 Дж</td>
+                  <td>140 разрядов по 360 Дж</td>
+                </tr>
+                <tr>
+                  <td>Наличие термопринтера</td>
+                  <td>нет</td>
+                  <td>нет</td>
+                  <td>нет</td>
+                </tr>
+                <tr>
+                  <td>Дисплей</td>
+                  <td>нет</td>
+                  <td>нет</td>
+                  <td>нет</td>
+                </tr>
+                <tr>
+                  <td>Глубина, см</td>
+                  <td>9 см</td>
+                  <td>9 см</td>
+                  <td>9 см</td>
+                </tr>
+                <tr>
+                  <td>Ширина, см</td>
+                  <td>28 см</td>
+                  <td>28 см</td>
+                  <td>28 см</td>
+                </tr>
+                <tr>
+                  <td>Высота, см</td>
+                  <td>25 см</td>
+                  <td>25 см</td>
+                  <td>25 см</td>
+                </tr>
+                <tr>
+                  <td>Вес, кг</td>
+                  <td>2,5 кг</td>
+                  <td>2,5 кг</td>
+                  <td>2,5 кг</td>
+                </tr>
+                <tr>
+                  <td>Наличие регистрационного удостоверения</td>
+                  <td>есть</td>
+                  <td>есть</td>
+                  <td>есть</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td>
+                    <div class="product__actions">
+                      <a href="#" class="promo__box-link product__actions-button">В корзину</a>
+                      <a href="#" class="promo__box-link product__actions-button"
+                        >Купить в 1 клик</a
+                      >
+                    </div>
+                  </td>
+                  <td>
+                    <div class="product__actions">
+                      <a href="#" class="promo__box-link product__actions-button">В корзину</a>
+                      <a href="#" class="promo__box-link product__actions-button"
+                        >Купить в 1 клик</a
+                      >
+                    </div>
+                  </td>
+                  <td>
+                    <div class="product__actions">
+                      <a href="#" class="promo__box-link product__actions-button">В корзину</a>
+                      <a href="#" class="promo__box-link product__actions-button"
+                        >Купить в 1 клик</a
+                      >
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table> -->
+
+            <div class="comparison-grid">
+              <!-- Header Row -->
+              <div class="grid-cell header-cell"></div>
+              <div class="grid-cell header-cell">
+                <div class="product-comparison">
+                  <img class="product-comparison__remove" src="images/close.png" alt="remove" />
+                  <img src="images/prod1.png" alt="Дефибриллятор" />
+                  <h3 class="product-comparison__title">
+                    Автоматический дефибриллятор<br />primedic heartsave pad
+                  </h3>
+                  <p class="product-comparison__price">136 000р</p>
+                  <div class="product-comparison__actions">
+                    <a href="#" class="promo__box-link product-comparison__button">В корзину</a>
+                    <a href="#" class="promo__box-link product-comparison__button"
+                      >Купить в 1 клик</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="grid-cell header-cell">
+                <div class="product-comparison">
+                  <img class="product-comparison__remove" src="images/close.png" alt="remove" />
+                  <img src="images/prod1.png" alt="Дефибриллятор" />
+                  <h3 class="product-comparison__title">
+                    Автоматический дефибриллятор<br />primedic heartsave pad
+                  </h3>
+                  <p class="product-comparison__price">136 000р</p>
+                  <div class="product-comparison__actions">
+                    <a href="#" class="promo__box-link product-comparison__button">В корзину</a>
+                    <a href="#" class="promo__box-link product-comparison__button"
+                      >Купить в 1 клик</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="grid-cell header-cell">
+                <div class="product-comparison">
+                  <img class="product-comparison__remove" src="images/close.png" alt="remove" />
+                  <img src="images/prod1.png" alt="Дефибриллятор" />
+                  <h3 class="product-comparison__title">
+                    Автоматический дефибриллятор<br />primedic heartsave pad
+                  </h3>
+                  <p class="product-comparison__price">136 000р</p>
+                  <div class="product-comparison__actions">
+                    <a href="#" class="promo__box-link product-comparison__button">В корзину</a>
+                    <a href="#" class="promo__box-link product-comparison__button"
+                      >Купить в 1 клик</a
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <!-- Attribute Rows -->
+
+              <!-- art -->
+              <div class="grid-cell">Артикул</div>
+              <div class="grid-cell">97609</div>
+              <div class="grid-cell">97609</div>
+              <div class="grid-cell">97609</div>
+              <!-- art end -->
+
+              <!-- brand -->
+              <div class="grid-cell">Бренд</div>
+              <div class="grid-cell">Primedic</div>
+              <div class="grid-cell">Primedic</div>
+              <div class="grid-cell">Primedic</div>
+              <!-- brand end -->
+
+              <!-- назначение -->
+              <div class="grid-cell">Назначение</div>
+              <div class="grid-cell">
+                Автоматизированная Наружная Дефибрилляция (АНД) через одноразовые самоклеящиеся
+                дефибриВремя набора энергии
+              </div>
+              <div class="grid-cell">
+                Автоматизированная Наружная Дефибрилляция (АНД) через одноразовые самоклеящиеся
+                дефибриВремя набора энергии
+              </div>
+              <div class="grid-cell">
+                Автоматизированная Наружная Дефибрилляция (АНД) через одноразовые самоклеящиеся
+                дефибриВремя набора энергии
+              </div>
+
+              <!-- назначение конец -->
+
+              <!-- время -->
+              <div class="grid-cell">Время набора энергии</div>
+              <div class="grid-cell">7 - 12 сек</div>
+              <div class="grid-cell">7 - 12 сек</div>
+              <div class="grid-cell">7 - 12 сек</div>
+              <!--  конец время -->
+
+              <!-- разряды -->
+              <div class="grid-cell">Количество разрядов от полностью заряженной батареи</div>
+              <div class="grid-cell">140 разрядов по 360 Дж</div>
+              <div class="grid-cell">140 разрядов по 360 Дж</div>
+              <div class="grid-cell">140 разрядов по 360 Дж</div>
+              <!--  конец разряды -->
+
+              <div class="grid-cell">Наличие термопринтера</div>
+              <div class="grid-cell">нет</div>
+              <div class="grid-cell">нет</div>
+              <div class="grid-cell">нет</div>
+
+              <div class="grid-cell">Дисплей</div>
+              <div class="grid-cell">нет</div>
+              <div class="grid-cell">нет</div>
+              <div class="grid-cell">нет</div>
+
+              <div class="grid-cell">Глубина, см</div>
+              <div class="grid-cell">9 см</div>
+              <div class="grid-cell">9 см</div>
+              <div class="grid-cell">9 см</div>
+
+              <div class="grid-cell">Ширина, см</div>
+              <div class="grid-cell">28 см</div>
+              <div class="grid-cell">28 см</div>
+              <div class="grid-cell">28 см</div>
+
+              <div class="grid-cell">Высота, см</div>
+              <div class="grid-cell">25 см</div>
+              <div class="grid-cell">25 см</div>
+              <div class="grid-cell">25 см</div>
+
+              <div class="grid-cell">Вес, кг</div>
+              <div class="grid-cell">2,5 кг</div>
+              <div class="grid-cell">2,5 кг</div>
+              <div class="grid-cell">2,5 кг</div>
+
+              <div class="grid-cell">Наличие регистрационного удостоверения</div>
+              <div class="grid-cell">есть</div>
+              <div class="grid-cell">есть</div>
+              <div class="grid-cell">есть</div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__inner">
+            <div class="footer__one">
+              <a href="index.html">
+                <img class="footer__one-img" src="images/logo.svg" alt="logo" />
+              </a>
+
+              <ul class="footer__one-list">
+                <li class="footer__one-item">
+                  <a href="#" class="footer__one-item-a">
+                    <img src="images/viber.svg" alt="viber" class="footer__one-item-img" />
+                  </a>
+                </li>
+                <li class="footer__one-item">
+                  <a href="#" class="footer__one-item-a">
+                    <img src="images/telegram.svg" alt="telegram" class="footer__one-item-img" />
+                  </a>
+                </li>
+                <li class="footer__one-item">
+                  <a href="#" class="footer__one-item-a">
+                    <img src="images/whatsapp.svg" alt="whatsapp" class="footer__one-item-img" />
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <ul class="footer__two-list">
+              <li class="footer__two-item">
+                <a href="#" class="footer__two-a">О компании</a>
+              </li>
+              <li class="footer__two-item">
+                <a href="#" class="footer__two-a">Производители</a>
+              </li>
+              <li class="footer__two-item">
+                <a href="#" class="footer__two-a">Доставка</a>
+              </li>
+              <li class="footer__two-item">
+                <a href="#" class="footer__two-a">Оплата</a>
+              </li>
+            </ul>
+
+            <ul class="footer__three-list">
+              <li class="footer__three-item">
+                <a href="#" class="footer__three-a">Каталог</a>
+              </li>
+              <li class="footer__three-item">
+                <a href="#" class="footer__three-a">Новости</a>
+              </li>
+              <li class="footer__three-item">
+                <a href="#" class="footer__three-a">Реквизиты</a>
+              </li>
+              <li class="footer__three-item">
+                <a href="#" class="footer__three-a">Контакты</a>
+              </li>
+            </ul>
+
+            <div class="footer__right">
+              <div class="footer__four">
+                <a class="footer__four-a" href="order-call.html">Заказать обратный звонок</a>
+                <p class="footer__four-p">
+                  Россия, Удмуртская Республика 426011, г. Ижевск, ул. Пушкинская 290 тел. 8 (3412)
+                  65-08-77
+                </p>
+              </div>
+
+              <div class="footer__five">
+                <a class="footer__five-a" href="#">Политика конфиденциальности</a>
+                <p class="footer__five-p">
+                  ООО «Boksmed» © 2015 - 2022. Сайт носит информационный характер и не является
+                  публичной офертой.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer__wrapper">
+            <img class="footer__wrapper-img" src="images/viber1.svg" alt="viber" />
+            <img class="footer__wrapper-img" src="images/up.svg" alt="up" />
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
