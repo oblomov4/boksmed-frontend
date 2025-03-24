@@ -9,7 +9,13 @@
   </head>
   <body>
     <div class="admin-container">
+      <div class="admin-container-sidebar-box">
+        <button class="admin-container-sidebar-btn">></button>
+      </div>
       <aside class="sidebar">
+        <button class="sidebar__wrapper-close">
+          <img class="sidebar__close" src="images/close.png" alt="" />
+        </button>
         <a href="#">Список заказов</a>
         <a href="#">Данные пользователей</a>
         <a href="#">Обратная связь</a>
@@ -23,11 +29,11 @@
         <div class="orders__inner">
           <div class="users-table">
             <!-- title -->
-            <div class="admin-cell cell-title">№</div>
-            <div class="admin-cell cell-title">Пользователь</div>
-            <div class="admin-cell cell-title">данные организации</div>
-            <div class="admin-cell cell-title">ИНН</div>
-            <div class="admin-cell cell-title">статус</div>
+            <div class="admin-cell admin-title">№</div>
+            <div class="admin-cell admin-title">Пользователь</div>
+            <div class="admin-cell admin-title">данные организации</div>
+            <div class="admin-cell admin-title">ИНН</div>
+            <div class="admin-cell admin-title">статус</div>
             <!--end title -->
 
             <!-- block -->
@@ -43,5 +49,7 @@
         </div>
       </main>
     </div>
+
+    <script src="js/admin.js"></script>
   </body>
 </html>

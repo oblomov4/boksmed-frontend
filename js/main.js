@@ -3,9 +3,9 @@ const swiperOne = new Swiper('.swiperOne', {
   loop: true,
   effect: 'fade',
 
-  autoplay: {
-    delay: 5000,
-  },
+  // autoplay: {
+  //   delay: 5000,
+  // },
 
   // Navigation arrows
   navigation: {
@@ -29,6 +29,24 @@ const swiperTwo = new Swiper('.swiperTwo', {
   navigation: {
     nextEl: '.new__next',
     prevEl: '.new__prev',
+  },
+
+  breakpoints: {
+    110: {
+      slidesPerView: 1,
+    },
+    640: {
+      slidesPerView: 2,
+    },
+    835: {
+      slidesPerView: 3,
+      spaceBetween: 30,
+    },
+
+    1210: {
+      slidesPerView: 4,
+      spaceBetween: 40,
+    },
   },
 });
 
